@@ -9,7 +9,27 @@
         <% end %>
       </ul>
     </div>
+
+    <% else %>
+    <div class="form-inputs">
+    <%= form.label :event_name, "Event Name"%>
+    <%= form.text_field :event_name,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "event_name" }%><br/><br/>
+    <%= form.label :event_location, "Event Location"%>
+    <%= form.text_field :event_location,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "event_location" }%><br/><br/>
+    <%= form.label :event_date, "Event Date"%>
+    <%= form.date_field :event_date,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "event_date" }%><br/><br/>
+  </div>
   <% end %>
+
 
   <div class="actions">
     <%= form.submit %>
