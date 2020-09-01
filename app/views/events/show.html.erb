@@ -5,6 +5,19 @@
   <p> Date is <%= @event.event_date %></p>
   <p>This event was created by <%= @event.event_creator.username %></p>
 </div>
+<div>
+<h3><%=@event.event_name%>'s attendees are:</h3>
+  <table>
+    <tbody>
+      <%@event.event_attendee.each do |attendee|%>
+        <tr>
+          <td><%=attendee.username%></td>
+          <td><%=attendee.email%></td>
+        </tr>
+      <%end%>
+    </tbody>
+  </table>
+</div>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>

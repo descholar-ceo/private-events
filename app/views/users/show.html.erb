@@ -5,7 +5,7 @@
   username: <%=@user.username%><br/>
   email: <%=@user.email%>
 
-  <h3><%=@user.username%>'s events are the following</h3>
+  <h3><%=@user.username%>'s events created the following events</h3>
   <table>
     <thead>
       <tr>
@@ -17,6 +17,29 @@
     </thead>
     <tbody>
       <%@user.events.each do |event|%>
+        <tr>
+          <td><%=event.id%></td>
+          <td><%=event.event_name%></td>
+          <td><%=event.event_date%></td>
+          <td><%=event.event_location%></td>
+        </tr>
+      <%end%>
+    </tbody>
+  </table>
+</p>
+<p>
+<h3><%=@user.username%> attended the following events</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>date</th>
+        <th>location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%@user.attended_event.each do |event|%>
         <tr>
           <td><%=event.id%></td>
           <td><%=event.event_name%></td>
