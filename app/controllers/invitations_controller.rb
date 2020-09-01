@@ -1,5 +1,5 @@
 class InvitationsController < ApplicationController
-  before_action :set_invitation, only: [:show, :edit, :update, :destroy]
+  before_action :set_invitation, only: %i[show edit update destroy]
 
   # GET /invitations
   # GET /invitations.json
@@ -9,8 +9,7 @@ class InvitationsController < ApplicationController
 
   # GET /invitations/1
   # GET /invitations/1.json
-  def show
-  end
+  def show; end
 
   # GET /invitations/new
   def new
@@ -18,8 +17,7 @@ class InvitationsController < ApplicationController
   end
 
   # GET /invitations/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /invitations
   # POST /invitations.json
@@ -62,13 +60,14 @@ class InvitationsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_invitation
-      @invitation = Invitation.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def invitation_params
-      params.fetch(:invitation, {})
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_invitation
+    @invitation = Invitation.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def invitation_params
+    params.fetch(:invitation, {})
+  end
 end
