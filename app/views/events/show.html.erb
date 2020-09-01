@@ -1,4 +1,10 @@
-<p id="notice"><%= notice %></p>
+
+<div>
+  <h3><%= @event.event_name%></h3>
+  <p>Location is <%= @event.event_location %></p>
+  <p> Date is <%= @event.event_date %></p>
+  <p>This event was created by <%= @event.event_creator.username %></p>
+</div>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
