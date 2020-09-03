@@ -1,12 +1,6 @@
-<h1>All Events</h1>
-<% if @upcoming_events.size.positive? %>
-  <h3>All Upcoming Events</h3>
-    <%= render partial: "table", locals:{ events: @upcoming_events} %>
-  <% end %>
-<% if @past_events.size.positive? %>
-  <h3>All Past Events</h3>
-    <%= render partial: "table", locals:{ events: @past_events} %>
-  <% end %> 
+<%=display_events(@upcoming_events,"events/table","All Upcoming Events")%>
+<%=display_events(@past_events,"events/table","All past Events")%>
 <br>
-
-<%= link_to 'New Event', new_event_path %>
+<div class="event-title">
+<%= link_to 'New Event', new_event_path, class: "new-event-btn button-info" %>
+</div>

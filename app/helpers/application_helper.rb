@@ -9,11 +9,10 @@ module ApplicationHelper
     end
     display.html_safe
   end
+
   def display_create_button
     button_display = ''
-    if user_signed_in?
-      button_display = link_to('Create event', new_event_path, class: 'button-info')
-    end
+    button_display = link_to('Create event', new_event_path, class: 'button-info') if user_signed_in?
     button_display
   end
 end

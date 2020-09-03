@@ -1,23 +1,27 @@
 
 <div>
-  <h3><%= @event.event_name%></h3>
-  <p>Location is <%= @event.event_location %></p>
-  <p> Date is <%= @event.event_date %></p>
-  <p>This event was created by <%= @event.event_creator.username %></p>
-</div>
-<div>
-<h3><%=@event.event_name%>'s attendees are:</h3>
   <table>
     <tbody>
-      <%@event.event_attendee.each do |attendee|%>
         <tr>
-          <td><%=attendee.username%></td>
-          <td><%=attendee.email%></td>
+          <td>Location:</td>
+          <td><%= @event.event_location %></td>
         </tr>
-      <%end%>
+        <tr>
+          <td>Event date:</td>
+          <td><%= @event.event_date %></td>
+        </tr>
+        <tr>
+          <td>Event creator:</td>
+          <td><%= @event.event_creator.username %></td>
+        </tr>
     </tbody>
   </table>
 </div>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<%#= render partial: "event_attendees.html.erb", locals: {event:@event} %>
+<%=display_avent_attendees(@event,"events/event_attendees")%>
+
+<div class="event-title">
+<%= link_to 'Edit', edit_event_path(@event), class: "button-info" %> |
+<%= link_to 'Back', events_path, class: "button-info" %>
+</div>
