@@ -1,62 +1,64 @@
-# Project Title
-> Badges : // If your project has some badges such as CI/CD, you will need to insert them here
+# Private eventbrite
 
-## Project vision
-> Vision : // You will give a general vision of the project, what problem you are solving in this project
+![Linters](https://github.com/descholar-ceo/private-events/workflows/Linters/badge.svg)
 
 ## Project description
-> Description : //You describe the general logic of the project here
+This project is for learning purpose just to get familiar with Associations in Ruby on Rails and active records. It is gotten from [The Odin Project](https://www.theodinproject.com/lessons/associations).
 
-## Screenshot (s)
-> Screenshots: // If your project has some UI, you will link the screenshot of the UI here
+In it, we built a simple clubhouse app, with ruby on rails, erb, and [Bulma](https://bulma.io/), that allows users to create embarassing posts and the authors of the posts are displayed only if a User is logged in.
 
-## Built with
-> Built with : // You will specify the technologies you used to build this project such as languages, frameworks, or libararies, ...
+## Screenshot
+![](app/assets/images/screenshots/scr-sht.png)
 
-## Features
-> Features : // List of features, what a user will be able to do with this project. Eg: a user can signup
-
-## Deployments
-	* Live demo link //The link of deplyoment of your project
-	* Documentation link //Link to documentation of this project
-
-## API Endpoints Specifications
-> If this project is a backend project which exposes some APIs. List all APIs here
-	* Root API
-	* List of all APIs
-
-## Tools
-> Tools : //List of all tools you used building this projects. Example: Code editor, CI/CD tools, Testing tools, deplyoment tools, ...
+## Tools and technologies used to build this project
+1. [Ruby 2.7.1](https://www.ruby-lang.org/en/news/2020/03/31/ruby-2-7-1-released/)
+1. [Ruby on Rails 6.0.3.2](https://weblog.rubyonrails.org/2020/6/17/Rails-6-0-3-2-has-been-released/)
 
 ## Running and testing it locally
-> Elaborate how this project could be tested and run on one's local computer
 
 ### Prerequisites
-> What should I have already to run this project locally?
+1. You should have [Ruby 2.7.1](https://www.ruby-lang.org/en/news/2020/03/31/ruby-2-7-1-released/)
+1. You need to have [Rails 6.0.3.2](https://weblog.rubyonrails.org/2020/6/17/Rails-6-0-3-2-has-been-released/)
 
 ### Setup
-> How should setup this project on my local computer?
+1. Clone this repository with `git clone https://github.com/Georjane/members-only.git`
+
+1. Go inside this repo locally by typing `cd members-only`
+
+1. Run `bundle install` to install all necessary dependecies
+
+1. Run `bin/rails db:migrate` to create necessary tables in database
 
 ### Usage
-> How to use it? //Which command should I run or how to start this project?
+Run `rails server`
 
-### Tests
-> How to run tests locally?
+## Contributing
+There are two ways of contributing to this project:
 
-## Contributions
-> How should I contribute? //Specify steps to follow inorder to contribute to this project, if it is allowed.
+1. If you see something wrong or not working, please open the issue in issue section
+1. If you see something to improve or to correct, and you have a solution to that, follow the below steps to contribute:
+    1. Fork this repository
+    1. Clone it on your local computer by running `git clone https://github.com/your-username/members-only.git` __Replace *your username* with the username you use on github__
+    1. Open the cloned repository which appears as a folder on your local computer with your favorite code editor
+    1. Create a separate branch off the *master branch*,
+    1. Write your codes which fix the issue you found
+    1. Commit and push the branch you created
+    1. Open a pull request, comparing your new created branch with our original master branch [here](https://github.com/Georjane/members-only)
 
-## Acknowledgement (s)
-> If you have used some resources from someone, or instution, or if you got motivations from somewhere, you should show them the acknowlodgement
+## Authors
+### 1. MUGIRASE Emmanuel
+* Github: [@descholar-ceo](https://github.com/descholar-ceo)
+* Twitter: [@descholar3](https://twitter.com/descholar3)
+* LinkedIn: [MUGIRASE Emmanuel](https://www.linkedin.com/in/mugirase-emmanuel)
 
-## Author (s)
-> Write your name here and list any other one who helped you during this project
+### 2. Witah Ngu Georjane
+* Github: [@Georjane](https://github.com/Georjane)
+* Twitter: [@WittyJany](https://twitter.com/WittyJany)
+* LinkedIn: [Witah Georjane](https://www.linkedin.com/in/witah-georjane)
 
-	* [GitHub username](github-link)
+## Show your support 
+Give a ⭐️ if you like this project!
 
-	* [LinkedIn username](linkedin-profile-link)
-
-	* [Twitter username](twitter-profile-link)
-
-
-===> You can find this readme file template [on this link](https://github.com/nezago/nezago-guidelines/wiki/Readme-file-template)
+## Acknowledgment
+* [Microverse](https://www.microvese.org)
+* [The Odin Project](https://www.theodinproject.com)
