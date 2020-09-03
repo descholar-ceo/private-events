@@ -1,33 +1,11 @@
 <h1>All Events</h1>
 <% if @upcoming_events.size.positive? %>
   <h3>All Upcoming Events</h3>
-  <table>
-    <tbody>
-      <% @upcoming_events.each do |upcoming| %>
-        <tr>
-          <td><strong><%= upcoming.event_name %></strong></td>
-          <td><%= link_to 'Show', upcoming %></td>
-          <td><%= link_to 'Edit', edit_event_path(upcoming) %></td>
-          <td><%= link_to 'Destroy', upcoming, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+    <%= render partial: "table", locals:{ events: @upcoming_events} %>
   <% end %>
 <% if @past_events.size.positive? %>
   <h3>All Past Events</h3>
-  <table>
-    <tbody>
-      <% @past_events.each do |past| %>
-        <tr>
-          <td><strong><%= past.event_name %></strong></td>
-          <td><%= link_to 'Show', past %></td>
-          <td><%= link_to 'Edit', edit_event_path(past) %></td>
-          <td><%= link_to 'Destroy', past, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+    <%= render partial: "table", locals:{ events: @past_events} %>
   <% end %> 
 <br>
 

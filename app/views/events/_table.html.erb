@@ -1,0 +1,12 @@
+  <table>
+    <tbody>
+      <% events.each do |upcoming| %>
+        <tr>
+          <td><strong><%= upcoming.event_name %></strong></td>
+          <td><%= link_to 'Show', upcoming %></td>
+          <td><%= link_to 'Edit', edit_event_path(upcoming) %></td>
+          <td><%= link_to 'Destroy', upcoming, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
