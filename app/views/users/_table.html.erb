@@ -1,0 +1,20 @@
+   <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>date</th>
+          <th>location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% events.each do |upcoming|%>            
+            <tr>
+              <td><%=upcoming.id%></td>
+              <td><%=upcoming.event_name%></td>
+              <td><%=upcoming.event_date%></td>
+              <td><%=upcoming.event_location%></td>
+            </tr>
+        <% end %>
+      </tbody>
+    </table>
