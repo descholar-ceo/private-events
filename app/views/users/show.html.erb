@@ -4,8 +4,57 @@
   <strong>User:</strong><br/>
   username: <%=@user.username%><br/>
   email: <%=@user.email%>
-
-  <h3><%=@user.username%>'s events created the following events</h3>
+  
+  <% if @upcoming_events.size.positive? %>
+    <h3><%=@user.username%> will attend the following events</h3> 
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>date</th>
+          <th>location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @upcoming_events.each do |upcoming|%>            
+            <tr>
+              <td><%=upcoming.id%></td>
+              <td><%=upcoming.event_name%></td>
+              <td><%=upcoming.event_date%></td>
+              <td><%=upcoming.event_location%></td>
+            </tr>
+        <% end %>
+      </tbody>
+    </table>
+      
+  <% end %>
+  <% if @past_events.size.positive? %>
+    <h3><%=@user.username%> attended the following events</h3> 
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>date</th>
+          <th>location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @past_events.each do |past|%>
+          <tr>
+            <td><%=past.id%></td>
+            <td><%=past.event_name%></td>
+            <td><%=past.event_date%></td>
+            <td><%=past.event_location%></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>        
+  <% end %>
+</p>
+<p>
+<h3><%=@user.username%> created the following events</h3>
   <table>
     <thead>
       <tr>
@@ -27,29 +76,9 @@
     </tbody>
   </table>
 </p>
-<p>
-<h3><%=@user.username%> attended the following events</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>id</th>
-        <th>name</th>
-        <th>date</th>
-        <th>location</th>
-      </tr>
-    </thead>
-    <tbody>
-      <%@user.attended_event.each do |event|%>
-        <tr>
-          <td><%=event.id%></td>
-          <td><%=event.event_name%></td>
-          <td><%=event.event_date%></td>
-          <td><%=event.event_location%></td>
-        </tr>
-      <%end%>
-    </tbody>
-  </table>
-</p>
+
+
+
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
