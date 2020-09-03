@@ -5,24 +5,9 @@
   username: <%=@user.username%><br/>
   email: <%=@user.email%>
   
-  <%= display_events(@upcoming_events, "users/table", "Upcoming Events") %>
-  <%= display_events(@past_events, "users/table", "Attended Events") %>
-  <%= display_events(@user.events, "users/table", "Created Events") %>
-
-  <%# if @past_events.size.positive? %>
-    <!--<%# <h3>=@user.username attended the following events</h3>  %>-->
-    <!--<%#= render partial: "table", locals:{ events: @past_events} %>-->        
-  <%# end %>
-<!--</p>
-<p>-->
-<%# if @user.events.size.positive? %>
-<!--<h3><%#=@user.username%> created the following events</h3>-->
-  <%#= render partial: "table", locals:{ events: @user.events} %> 
-<%# end %> 
-<!--</p>-->
-
-
-
+  <%= display_events(@upcoming_events, "users/table", "All #{@user.username}'s Upcoming Events") %>
+  <%= display_events(@past_events, "users/table", "All #{@user.username}'s Attended Events") %>
+  <%= display_events(@user.events, "users/table", "All #{@user.username}'s Created Events") %>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
