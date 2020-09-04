@@ -20,17 +20,17 @@ A site similar to a private Eventbrite was built which allows users to create ev
 1. You should have [Ruby 2.7.1](https://www.ruby-lang.org/en/news/2020/03/31/ruby-2-7-1-released/)
 1. You need to have [Rails 6.0.3.2](https://weblog.rubyonrails.org/2020/6/17/Rails-6-0-3-2-has-been-released/)
 
-### Setup
+### Setup && usage
 1. Clone this repository with `git clone https://github.com/descholar-ceo/private-events.git`
-
 1. Go inside this repo locally by typing `cd private-events`
-
-1. Run `bundle install` to install all necessary dependecies
-
-1. Run `bin/rails db:migrate` to create necessary tables in database
-
-### Usage
-Run `rails server`
+1. Run `bundle install` to install all ruby gems
+1. Run `yarn` to install Javascript dependencies
+1. Run `bin/rails db:migrate` to create necessary tables in the database
+1. Run `rails server`
+1. Signup and create some events
+1. To create an invitation click the `invite someone` in the navigation bar
+1. To see a list of all events, click on home button on the navbar
+1. To see event's show page, navigate to the `all events` page and click on any event's `show` button
 
 ## Contributing
 There are two ways of contributing to this project:

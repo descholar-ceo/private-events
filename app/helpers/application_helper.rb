@@ -12,7 +12,11 @@ module ApplicationHelper
 
   def display_create_button
     button_display = ''
-    button_display = link_to('Create event', new_event_path, class: 'button-info') if user_signed_in?
-    button_display
+    if user_signed_in?
+      button_display << link_to('All events', events_path, class: 'button-info')
+      button_display << link_to('Create event', new_event_path, class: 'button-info')
+      button_display << link_to('Invite someone', new_invitation_path, class: 'button-info')
+    end
+    button_display.html_safe
   end
 end

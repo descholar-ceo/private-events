@@ -9,9 +9,22 @@
         <% end %>
       </ul>
     </div>
-  <% end %>
-
+  <% else %>
+    <div class="form-inputs">
+    <%= form.label :event_attendee_id, "Event Attendee Id"%>
+    <%= form.number_field :event_attendee_id,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "event_attendee_id" }%><br/><br/>
+    <%= form.label :attended_event_id, "Id of envent to attend"%>
+    <%= form.number_field :attended_event_id,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "attended_event_id" }%><br/><br/>
   <div class="actions">
     <%= form.submit %>
   </div>
+  </div>
+
+  <% end %>
 <% end %>

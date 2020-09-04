@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong><br/>
+<div class="event-title">
   username: <%=@user.username%><br/>
   email: <%=@user.email%>
-  
+</div>
+  <%= display_events(@user.events, "users/table", "All #{@user.username}'s Created Events") %>
   <%= display_events(@upcoming_events, "users/table", "All #{@user.username}'s Upcoming Events") %>
   <%= display_events(@past_events, "users/table", "All #{@user.username}'s Attended Events") %>
-  <%= display_events(@user.events, "users/table", "All #{@user.username}'s Created Events") %>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div class="event-title">
+<%= link_to 'Edit', edit_user_path(@user), class: "button-info" %> |
+<%= link_to 'Back', users_path,class: "button-info" %>
+</div>
