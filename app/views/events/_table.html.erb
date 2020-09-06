@@ -1,0 +1,13 @@
+  <h3 class="event-title"><%=title%></h3>
+  <table>
+    <tbody>
+      <% events.each do |upcoming| %>
+        <tr>
+          <td><strong><%= upcoming.event_name %></strong></td>
+          <td><%= link_to 'Show', upcoming, class: "button-info" %></td>
+          <td><%= link_to 'Edit', edit_event_path(upcoming), class: "button-info" %></td>
+          <td><%= link_to 'Destroy', upcoming, method: :delete, data: { confirm: 'Are you sure?' }, class: "button-danger" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>

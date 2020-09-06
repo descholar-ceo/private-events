@@ -1,0 +1,6 @@
+<%=display_events(@upcoming_events,"events/table","All Upcoming Events")%>
+<%=display_events(@past_events,"events/table","All past Events")%>
+<br>
+<div class="event-title">
+<%= link_to 'New Event', new_event_path, class: "new-event-btn button-info" %>
+</div>
