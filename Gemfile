@@ -50,6 +50,7 @@ group :test do
   gem 'rspec-rails', '~> 4.0', '>= 4.0.1'
   gem 'webdrivers'
   gem 'shoulda-matchers', '~> 4.4', '>= 4.4.1'
+  gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
