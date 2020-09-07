@@ -1,7 +1,10 @@
 example_id                              | status | run_time        |
 --------------------------------------- | ------ | --------------- |
-./spec/models/invitation_spec.rb[1:1:1] | passed | 0.07824 seconds |
-./spec/models/invitation_spec.rb[1:1:2] | passed | 0.00428 seconds |
-./spec/models/user_spec.rb[1:1:1]       | passed | 0.00111 seconds |
-./spec/models/user_spec.rb[1:1:2]       | passed | 0.00213 seconds |
-./spec/models/user_spec.rb[1:1:3]       | passed | 0.02795 seconds |
+./spec/models/event_spec.rb[1:1:1]      | passed | 0.006 seconds   |
+./spec/models/event_spec.rb[1:1:2]      | passed | 0.01118 seconds |
+./spec/models/event_spec.rb[1:1:3]      | passed | 0.00277 seconds |
+./spec/models/invitation_spec.rb[1:1:1] | passed | 0.02221 seconds |
+./spec/models/invitation_spec.rb[1:1:2] | passed | 0.00552 seconds |
+./spec/models/user_spec.rb[1:1:1]       | passed | 0.01632 seconds |
+./spec/models/user_spec.rb[1:1:2]       | passed | 0.00102 seconds |
+./spec/models/user_spec.rb[1:1:3]       | passed | 0.00151 seconds |
