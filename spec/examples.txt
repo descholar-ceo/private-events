@@ -1,13 +1,15 @@
 example_id                              | status | run_time        |
 --------------------------------------- | ------ | --------------- |
-./spec/models/event_spec.rb[1:1:1]      | passed | 0.00343 seconds |
-./spec/models/event_spec.rb[1:1:2]      | passed | 0.0134 seconds  |
-./spec/models/event_spec.rb[1:1:3]      | passed | 0.00135 seconds |
-./spec/models/invitation_spec.rb[1:1:1] | passed | 0.00652 seconds |
-./spec/models/invitation_spec.rb[1:1:2] | passed | 0.05577 seconds |
-./spec/models/user_spec.rb[1:1:1]       | passed | 0.00312 seconds |
-./spec/models/user_spec.rb[1:1:2]       | passed | 0.00128 seconds |
-./spec/models/user_spec.rb[1:1:3]       | passed | 0.00114 seconds |
-./spec/routes/routes_spec.rb[1:1:1]     | passed | 0.22323 seconds |
-./spec/routes/routes_spec.rb[1:2:1]     | passed | 0.01734 seconds |
-./spec/routes/routes_spec.rb[1:2:2]     | passed | 0.11536 seconds |
+./spec/models/event_spec.rb[1:1:1]      | passed | 0.04353 seconds |
+./spec/models/event_spec.rb[1:1:2]      | passed | 0.00124 seconds |
+./spec/models/event_spec.rb[1:1:3]      | passed | 0.0021 seconds  |
+./spec/models/invitation_spec.rb[1:1:1] | passed | 0.01208 seconds |
+./spec/models/invitation_spec.rb[1:1:2] | passed | 0.00564 seconds |
+./spec/models/user_spec.rb[1:1:1]       | passed | 0.00239 seconds |
+./spec/models/user_spec.rb[1:1:2]       | passed | 0.0271 seconds  |
+./spec/models/user_spec.rb[1:1:3]       | passed | 0.00216 seconds |
+./spec/routes/routes_spec.rb[1:1:1]     | passed | 0.21712 seconds |
+./spec/routes/routes_spec.rb[1:2:1]     | passed | 0.02924 seconds |
+./spec/routes/routes_spec.rb[1:2:2]     | passed | 0.01611 seconds |
+./spec/routes/routes_spec.rb[1:3:1]     | passed | 0.0243 seconds  |
+./spec/routes/routes_spec.rb[1:3:2]     | passed | 0.09466 seconds |
