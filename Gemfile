@@ -49,6 +49,7 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'rspec-rails', '~> 4.0', '>= 4.0.1'
   gem 'webdrivers'
+  gem 'shoulda-matchers', '~> 4.4', '>= 4.4.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
