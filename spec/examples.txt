@@ -1,5 +1,7 @@
-example_id                        | status | run_time        |
---------------------------------- | ------ | --------------- |
-./spec/models/user_spec.rb[1:1:1] | passed | 0.04449 seconds |
-./spec/models/user_spec.rb[1:1:2] | passed | 0.00283 seconds |
-./spec/models/user_spec.rb[1:1:3] | passed | 0.00462 seconds |
+example_id                              | status | run_time        |
+--------------------------------------- | ------ | --------------- |
+./spec/models/invitation_spec.rb[1:1:1] | passed | 0.07824 seconds |
+./spec/models/invitation_spec.rb[1:1:2] | passed | 0.00428 seconds |
+./spec/models/user_spec.rb[1:1:1]       | passed | 0.00111 seconds |
+./spec/models/user_spec.rb[1:1:2]       | passed | 0.00213 seconds |
+./spec/models/user_spec.rb[1:1:3]       | passed | 0.02795 seconds |
